@@ -89,7 +89,7 @@ export default function AdminDashboard() {
                 outerRadius={80}
                 label={(entry) => entry.name}
               >
-                {pieData.map((entry, index) => (
+                {pieData.map((_entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
